@@ -7,7 +7,11 @@
 ## What is?
 
 ## To-Do
- - 
+ - Build UI
+    - Recipe list
+    - Recipe "exploration"
+    - Item sprite display
+    - Item name/description display
 
 
 ## References
