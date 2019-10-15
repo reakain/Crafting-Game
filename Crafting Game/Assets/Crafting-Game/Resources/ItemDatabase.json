@@ -1,0 +1,120 @@
+{
+  "items": [
+    {
+      "name": "Bell",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Lucky Clover",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Feather",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Broom",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Old Key",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Acient Tome",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Potion Bottle",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "false"
+    },
+
+    {
+      "name": "Mushroom",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "Mushroom",
+      "action": "what the item does",
+      "key": "false"
+    },
+
+    {
+      "name": "Cheese",
+      "desc": "item description",
+      "atlas": "FoodSpriteAtlas",
+      "sprite": "Cheese",
+      "action": "what the item does",
+      "key": "false"
+    },
+
+    {
+      "name": "Loaf of Bread",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "BreadLoaf",
+      "action": "what the item does",
+      "key": "false"
+    },
+
+    {
+      "name": "Coffee",
+      "desc": "A delicious smelling cup of coffee. This will surely perk up your senses and help you focus, and not give you anxiety or make you jittery.",
+      "atlas": "Items",
+      "sprite": "Coffee",
+      "action": "what the item does",
+      "key": "false"
+    },
+
+    {
+      "name": "Instruction Sheet",
+      "desc": "item description",
+      "atlas": "Items",
+      "sprite": "item image in inventory",
+      "action": "what the item does",
+      "key": "true"
+    },
+
+    {
+      "name": "Apple",
+      "desc": "item description",
+      "atlas": "FoodSpriteAtlas",
+      "sprite": "Apple",
+      "action": "what the item does",
+      "key": "false"
+    }
+  ]
+}

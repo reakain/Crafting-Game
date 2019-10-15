@@ -137,4 +137,27 @@ namespace CraftingGame
             return new ItemBundle(Name, Amount);
         }
     }
+
+    #region ItemDatabases
+    [System.Serializable]
+    public class ItemDatabase
+    {
+        public Item[] items;
+        public static ItemDatabase CreateFromJSON(string jsonString)
+        {
+            return JsonUtility.FromJson<ItemDatabase>(jsonString);
+        }
+    }
+
+    [System.Serializable]
+    public class Item
+    {
+        public string name = "";
+        public string desc = "";
+        public string atlas = "";
+        public string sprite = "";
+        public string action = "";
+        public bool key;
+    }
+    #endregion
 }
