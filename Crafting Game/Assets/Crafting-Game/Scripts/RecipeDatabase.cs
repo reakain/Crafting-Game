@@ -25,21 +25,58 @@ namespace CraftingGame
             return recipes[recipe];
         }
 
-        public IEnumerable<Recipe> GetCraftablerecipes(ItemSet availableItems)
+        public IEnumerable<Recipe> GetCraftableRecipes(Inventory availableItems)
         {
             foreach (var recipe in recipes.Values)
                 if (recipe.CanCraft(availableItems))
                     yield return recipe;
         }
 
-        public void Craft(string recipe, ItemSet inventory)
+        public void Craft(string recipe, Inventory inventory)
         {
             inventory.AddItem(Get(recipe).Craft(inventory));
         }
 
-        public bool CanCraft(string recipe, ItemSet inventory)
+        public bool CanCraft(string recipe, Inventory inventory)
         {
             return Get(recipe).CanCraft(inventory);
         }
+
+        public void LoadFromJson(string jsonString)
+        {
+            var recipesdata = RecipeDataJson.CreateFromJson(jsonString);
+            foreach(var reci in recipesdata.recipes)
+            {
+                Create(reci.name, reci.qty);
+                foreach(var item in reci.items)
+                {
+                    recipes[reci.name].Require(item.name, item.qty);
+                }
+            }
+        }
+        
+    }
+
+    public class RecipeDataJson
+        {
+        public RecipeJson[] recipes;
+
+        public static RecipeDataJson CreateFromJson(string jsonString)
+        {
+            return JsonUtility.FromJson<RecipeDataJson>(jsonString);
+        }
+    }
+
+    public class RecipeJson
+    {
+        public string name;
+        public int qty;
+        public ItemJson[] items;
+    }
+
+    public class ItemJson
+    {
+        public string name;
+        public int qty;
     }
 }

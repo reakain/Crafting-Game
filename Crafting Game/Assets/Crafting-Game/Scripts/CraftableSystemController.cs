@@ -7,8 +7,8 @@ namespace CraftingGame
 {
     public class CraftableSystemController : MonoBehaviour
     {
-        private RecepieDatabase database = new RecepieDatabase();
-        private ItemSet inventory = new ItemSet();
+        private RecipeDatabase database = new RecipeDatabase();
+        private Inventory inventory = new Inventory();
         private StringBuilder log = new StringBuilder();
 
         void Awake()
@@ -79,7 +79,7 @@ namespace CraftingGame
             Log("Craftable Recepies");
             Log("==================");
 
-            foreach (var recepie in database.GetCraftableRecepies(inventory))
+            foreach (var recepie in database.GetCraftableRecipes(inventory))
                 log.AppendLine("  " + recepie.ToString());
 
             Log();
